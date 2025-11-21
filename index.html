@@ -1,173 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Spider-Verse Fanpage</title>
-  <!-- TailwindCSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spider-Man Fan Web</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans">
-  <!-- SEMANTIC NAVBAR -->
-  <header class="bg-[linear-gradient(90deg,#0b1226,#1f2937)] shadow-lg sticky top-0 z-50">
-    <nav class="container mx-auto px-4 py-3 flex items-center justify-between" aria-label="Main navigation">
-      <a href="#home" class="flex items-center gap-3">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Spider-Man_symbol.svg" alt="Spider logo" class="w-10 h-10" />
-        <h1 class="text-2xl font-bold">Spider‑Verse Fanpage</h1>
-      </a>
 
-      <button id="nav-toggle" class="md:hidden p-2 rounded bg-red-600/80">Menu</button>
+<body>
 
-      <ul id="nav-list" class="hidden md:flex gap-6 items-center text-lg">
-        <li><a href="#home" class="hover:text-red-300">Home</a></li>
-        <li><a href="#about" class="hover:text-red-300">About</a></li>
-        <li><a href="#characters" class="hover:text-red-300">Characters</a></li>
-        <li><a href="#gallery" class="hover:text-red-300">Gallery</a></li>
-        <li><a href="#contact" class="hover:text-red-300">Contact</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/Spider-Man" target="_blank" rel="noopener" class="text-sm bg-red-600 px-3 py-1 rounded">Learn more</a></li>
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <h1>Spider-Man Web</h1>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About Spidey</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <hr>
   </header>
 
+  <!-- MAIN CONTENT -->
   <main>
-    <!-- HERO SECTION -->
-    <section id="home" class="relative h-[60vh] md:h-[70vh] bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1520975921216-9a2f2a0b0f6b');" aria-label="Hero: Spider web skyline">
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="container mx-auto relative z-10 h-full flex items-center">
-        <div class="p-6 md:p-12 bg-black/30 rounded-lg backdrop-blur-sm">
-          <h2 class="text-4xl md:text-5xl font-extrabold text-red-400 drop-shadow-lg">Welcome to the Spider‑Verse</h2>
-          <p class="mt-3 text-lg md:text-xl max-w-xl">Fanpage dedicated to Spider‑Man across universes: comics, movies, and animations. Explore characters, artwork, and fun facts.</p>
-          <div class="mt-6 flex gap-3">
-            <a href="#characters" class="inline-block bg-red-600 px-5 py-3 rounded font-semibold hover:bg-red-700">Meet Characters</a>
-            <a href="#gallery" class="inline-block border border-red-600 px-5 py-3 rounded hover:bg-red-800/50">View Gallery</a>
-          </div>
-        </div>
-      </div>
+
+    <!-- SECTION 1: HERO -->
+    <section id="hero">
+      <article>
+        <h2>Welcome to Spider-Man Universe</h2>
+        <p>Jelajahi dunia Spider-Man yang penuh aksi, pahlawan, dan kisah inspiratif dari Peter Parker hingga Spider-Verse.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Spiderman50.jpg" 
+             alt="Spider-Man" width="100%">
+      </article>
+      <hr>
     </section>
 
-    <!-- ABOUT SECTION (GRID + SEMANTIC) -->
-    <section id="about" class="container mx-auto px-4 py-16">
-      <h3 class="text-3xl font-bold text-center text-red-300 mb-8">About Spider‑Man</h3>
-
-      <div class="grid gap-6 md:grid-cols-3 items-center">
-        <article class="md:col-span-2 bg-gray-800/50 p-6 rounded-lg">
-          <h4 class="text-2xl font-semibold mb-3">Origins & Legacy</h4>
-          <p class="leading-relaxed">Spider‑Man is one of Marvel's most iconic heroes — a story about responsibility, struggle, and heart. This section summarizes origins, major continuities, and why the character resonates across generations.</p>
-          <p class="mt-4">Whether you prefer Peter Parker, Miles Morales, or movie variants, the web ties them together. This fanpage is for learning, sharing fan art, and celebrating the web‑slinger.</p>
-        </article>
-
-        <aside class="bg-gradient-to-br from-red-700 to-black p-6 rounded-lg text-center">
-          <h5 class="text-xl font-bold mb-2">Quick Facts</h5>
-          <ul class="text-left list-disc pl-5">
-            <li>Created by Stan Lee & Steve Ditko</li>
-            <li>First appearance: Amazing Fantasy #15 (1962)</li>
-            <li>Notable versions: Peter Parker, Miles Morales, Gwen Stacy (Spider‑Gwen)</li>
-          </ul>
-        </aside>
-      </div>
+    <!-- SECTION 2: ABOUT -->
+    <section id="about">
+      <article>
+        <h2>About Spider-Man</h2>
+        <p>Spider-Man pertama kali muncul pada tahun 1962 dan diciptakan oleh Stan Lee dan Steve Ditko. Ia dikenal sebagai pahlawan muda yang berjuang dengan kekuatan laba-laba super.</p>
+        <p>Kekuatan Spider-Man antara lain:</p>
+        <ul>
+          <li>Wall-crawling (memanjat dinding)</li>
+          <li>Spider-sense (indra laba-laba)</li>
+          <li>Super strength & agility</li>
+        </ul>
+      </article>
+      <hr>
     </section>
 
-    <!-- CHARACTERS SECTION (GRID LAYOUT) -->
-    <section id="characters" class="bg-gray-900/80 py-16">
-      <div class="container mx-auto px-4">
-        <h3 class="text-3xl font-bold text-center text-red-300 mb-8">Characters</h3>
+    <!-- SECTION 3: GALLERY -->
+    <section id="gallery">
+      <article>
+        <h2>Spider-Man Gallery</h2>
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/Spider-Man_Into_the_Spider-Verse_poster.png" 
+               alt="Spider-Verse Poster" width="100%">
+          <figcaption>Spider-Man: Into the Spider-Verse</figcaption>
+        </figure>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <figure class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-            <img src="https://images.unsplash.com/photo-1531446598825-6bfa8f6f3f76" alt="Peter Parker portrait" class="w-full h-48 object-cover" />
-            <figcaption class="p-4">
-              <h6 class="font-bold">Peter Parker</h6>
-              <p class="text-sm text-gray-300">The original Spider‑Man. Genius, photographer, friendly neighborhood hero.</p>
-              <a href="https://en.wikipedia.org/wiki/Peter_Parker" target="_blank" rel="noopener" class="text-sm inline-block mt-2 underline">Read more</a>
-            </figcaption>
-          </figure>
-
-          <figure class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-            <img src="https://images.unsplash.com/photo-1526224757077-9c8aa73b0d2a" alt="Miles Morales" class="w-full h-48 object-cover" />
-            <figcaption class="p-4">
-              <h6 class="font-bold">Miles Morales</h6>
-              <p class="text-sm text-gray-300">A newer Spider‑Man from the Ultimate Universe who connects with younger fans.</p>
-              <a href="https://en.wikipedia.org/wiki/Miles_Morales" target="_blank" rel="noopener" class="text-sm inline-block mt-2 underline">Read more</a>
-            </figcaption>
-          </figure>
-
-          <figure class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a" alt="Gwen Stacy as Spider-Gwen" class="w-full h-48 object-cover" />
-            <figcaption class="p-4">
-              <h6 class="font-bold">Gwen Stacy (Spider‑Gwen)</h6>
-              <p class="text-sm text-gray-300">Also known as Spider‑Gwen — an alternate-universe Spider hero with her own style.</p>
-              <a href="https://en.wikipedia.org/wiki/Gwen_Stacy" target="_blank" rel="noopener" class="text-sm inline-block mt-2 underline">Read more</a>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/en/f/f9/Spider-Man_Homecoming_poster.jpg" 
+               alt="Homecoming" width="100%">
+          <figcaption>Spider-Man: Homecoming</figcaption>
+        </figure>
+      </article>
+      <hr>
     </section>
 
-    <!-- GALLERY SECTION (GRID) -->
-    <section id="gallery" class="container mx-auto px-4 py-16">
-      <h3 class="text-3xl font-bold text-center text-red-300 mb-8">Fan Gallery</h3>
-
-      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30" alt="Spider art 1" class="rounded-lg w-full h-48 object-cover shadow-md" />
-        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23" alt="Spider art 2" class="rounded-lg w-full h-48 object-cover shadow-md" />
-        <img src="https://images.unsplash.com/photo-1532303698475-2ce6a5a4f3b0" alt="Spider art 3" class="rounded-lg w-full h-48 object-cover shadow-md" />
-        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Spider art 4" class="rounded-lg w-full h-48 object-cover shadow-md" />
-        <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d" alt="Spider art 5" class="rounded-lg w-full h-48 object-cover shadow-md" />
-        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Spider art 6" class="rounded-lg w-full h-48 object-cover shadow-md" />
-      </div>
+    <!-- SECTION 4: CONTACT -->
+    <section id="contact">
+      <article>
+        <h2>Contact</h2>
+        <p>Ingin bergabung dengan komunitas? Hubungi kami melalui email di bawah ini.</p>
+        <a href="mailto:spideyweb@example.com">spideyweb@example.com</a>
+      </article>
+      <hr>
     </section>
 
-    <!-- CONTACT SECTION (FLEXBOX FORM + DETAILS) -->
-    <section id="contact" class="bg-gray-900/80 py-16">
-      <div class="container mx-auto px-4">
-        <h3 class="text-3xl font-bold text-center text-red-300 mb-8">Contact & Contribute</h3>
-
-        <div class="flex flex-col md:flex-row gap-6">
-          <form class="flex-1 bg-gray-800/60 p-6 rounded-lg" aria-label="Contact form">
-            <label class="block mb-2 text-sm">Name</label>
-            <input class="w-full p-3 rounded bg-gray-700 text-gray-100 mb-3" type="text" placeholder="Your name" />
-
-            <label class="block mb-2 text-sm">Email</label>
-            <input class="w-full p-3 rounded bg-gray-700 text-gray-100 mb-3" type="email" placeholder="you@example.com" />
-
-            <label class="block mb-2 text-sm">Message</label>
-            <textarea class="w-full p-3 rounded bg-gray-700 text-gray-100 mb-3" rows="5" placeholder="Share fan art or feedback..."></textarea>
-
-            <div class="flex justify-between items-center">
-              <button type="submit" class="bg-red-600 px-5 py-2 rounded font-semibold">Send</button>
-              <small class="text-xs text-gray-400">We'll never share your email.</small>
-            </div>
-          </form>
-
-          <div class="flex-1 bg-gradient-to-br from-black to-gray-800 p-6 rounded-lg flex flex-col justify-center">
-            <h4 class="text-xl font-bold mb-3">Contribute Art</h4>
-            <p class="text-sm text-gray-300">Want your art featured? Send an image link or attach in the form. Respect copyright — only submit original art or properly licensed works.</p>
-            <address class="not-italic mt-4 text-sm text-gray-400">Email: <a href="mailto:spiderfan@example.com" class="underline">spiderfan@example.com</a></address>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-black text-gray-400 py-6">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-      <p>© 2025 Spider‑Verse Fanpage — Fan content only.</p>
-      <ul class="flex gap-4">
-        <li><a href="#home" class="underline">Home</a></li>
-        <li><a href="#gallery" class="underline">Gallery</a></li>
-        <li><a href="#contact" class="underline">Contact</a></li>
-      </ul>
-    </div>
+  <footer>
+    <p>&copy; 2025 Spider-Man Fan Web. Made for learning purpose.</p>
+    <nav>
+      <a href="#hero">Kembali ke atas</a>
+    </nav>
   </footer>
 
-  <script>
-    // Simple mobile nav toggle
-    const btn = document.getElementById('nav-toggle');
-    const nav = document.getElementById('nav-list');
-    btn.addEventListener('click', () => {
-      nav.classList.toggle('hidden');
-    });
-  </script>
 </body>
 </html>
+
+/* RESET SEDERHANA */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+  background: #d00000; /* merah khas Spider-Man */
+  padding: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #000;
+}
+
+/* MAIN CONTENT */
+main {
+  padding: 20px;
+}
+
+section {
+  margin: 40px 0;
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #d00000;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  color: #d00000;
+}
+
+img {
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* FIGURE */
+figure {
+  margin-top: 20px;
+}
+
+figcaption {
+  margin-top: 5px;
+  font-style: italic;
+  text-align: center;
+  color: #c3c3c3;
+}
+
+/* FOOTER */
+footer {
+  background: #d00000;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* RESPONSIVE NAVBAR */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
